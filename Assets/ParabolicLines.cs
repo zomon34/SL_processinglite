@@ -60,25 +60,25 @@ public class ParabolicLines : ProcessingLite.GP21
             Line(Width - i, base.Height, Width, startY + i);
         }
     }
-    public class axis
+    public class Axis
     {
         public Vector2 start;
         public Vector2 end;
 
-        public axis(Vector2 _start, Vector2 _end)
+        public Axis(Vector2 _start, Vector2 _end)
         {
             start = _start;
             end = _end;
         }
     }
 
-    public class parabolicLine
+    public class ParabolicLine
     {
         public int numberOfLines;
-        public axis axis1;
-        public axis axis2;
+        public Axis axis1;
+        public Axis axis2;
 
-        public parabolicLine(axis _axis1, axis _axis2, int _numberOfLines)
+        public ParabolicLine(Axis _axis1, Axis _axis2, int _numberOfLines)
         {
             numberOfLines = _numberOfLines;
             axis1 = _axis1;
@@ -86,7 +86,7 @@ public class ParabolicLines : ProcessingLite.GP21
         }
     }
 
-    public void drawLine(parabolicLine parabolicLine)
+    public void DrawLine(ParabolicLine parabolicLine)
     {
         //for (int i = 0; i < parabolicLine.numberOfLines; i++)
         //{
