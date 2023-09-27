@@ -65,10 +65,10 @@ public class ParabolicLines : ProcessingLite.GP21
         public Vector2 start;
         public Vector2 end;
 
-        public Axis(Vector2 _start, Vector2 _end)
+        public Axis(Vector2 start, Vector2 end)
         {
-            start = _start;
-            end = _end;
+            this.start = start;
+            this.end = end;
         }
     }
 
@@ -78,11 +78,11 @@ public class ParabolicLines : ProcessingLite.GP21
         public Axis axis1;
         public Axis axis2;
 
-        public ParabolicLine(Axis _axis1, Axis _axis2, int _numberOfLines)
+        public ParabolicLine(Axis axis1, Axis axis2, int numberOfLines)
         {
-            numberOfLines = _numberOfLines;
-            axis1 = _axis1;
-            axis2 = _axis2;
+            this.numberOfLines = numberOfLines;
+            this.axis1 = axis1;
+            this.axis2 = axis2;
         }
     }
 
